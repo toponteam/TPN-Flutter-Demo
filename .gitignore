@@ -25,3 +25,71 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+.idea/
+.idea_modules/
+
+# Visual Studio Code related
+.vscode/
+
+# Android/IJ specific
+**/.idea/**
+*.iws
+*.ipr
+*.ips
+
+# Flutter/Dart/Pub related
+.pub-cache/
+.pub/
+/build/
+
+# OS-related files
+Thumbs.db
+ehthumbs.db
+Icon?
+._*
+
+# Custom files - Add any additional files you wish to ignore
+# e.g., local properties file with secrets
+/local.properties
+
+# Generated files for coverage tests
+coverage/
+
+# Keystore files (Android signing config)
+*.jks
+*.keystore
+
+# Android build output directory
+/android/app/build/
+
+# iOS related
+ios/.generated/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/flutter_assets/
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/Runner.xcworkspace
+
+# macOS related
+macos/Pods/
+macos/Flutter/ephemeral/
+macos/Flutter/Flutter.framework
+macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Symbolication crash logs (iOS)
+ios/Flutter/*.symbols
