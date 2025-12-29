@@ -1,4 +1,4 @@
-package com.example.anythink_sdk_example;
+package com.topon.flutter.demo;
 
 import io.flutter.embedding.android.FlutterActivity;
 

@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:anythink_sdk/at_index.dart';
+import 'package:secmtp_sdk/at_index.dart';
 import '../main.dart';
 import '../topsize.dart';
 import '../configuration_sdk.dart';

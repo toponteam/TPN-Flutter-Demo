@@ -1,9 +1,9 @@
-import 'package:anythink_sdk_example/Button/button_with_label.dart';
-import 'package:anythink_sdk_example/main.dart';
+import 'package:topon.flutter.demo/Button/button_with_label.dart';
+import 'package:topon.flutter.demo/main.dart';
 import 'package:flutter/material.dart';
-import 'package:anythink_sdk_example/configuration_sdk.dart';
-import 'package:anythink_sdk_example/manager/rewarder_sdk.dart';
-import 'package:anythink_sdk_example/manager/interstitial_sdk.dart';
+import 'package:topon.flutter.demo/configuration_sdk.dart';
+import 'package:topon.flutter.demo/manager/rewarder_sdk.dart';
+import 'package:topon.flutter.demo/manager/interstitial_sdk.dart';
 
 class AutomaticPage extends StatefulWidget {
   const AutomaticPage({Key? key}) : super(key: key);

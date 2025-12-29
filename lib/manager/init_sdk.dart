@@ -1,7 +1,9 @@
 import 'dart:io';
 
-import 'package:anythink_sdk/at_index.dart';
-import 'package:anythink_sdk_example/manager/splash_sdk.dart';
+import 'package:topon.flutter.demo/manager/splash_sdk.dart';
+import 'package:secmtp_sdk/at_init.dart';
+import 'package:secmtp_sdk/at_init_response.dart';
+import 'package:secmtp_sdk/at_listener.dart';
 import '../configuration_sdk.dart';
 import 'banner_sdk.dart';
 import 'interstitial_sdk.dart';
