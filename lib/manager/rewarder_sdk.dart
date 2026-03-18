@@ -176,7 +176,7 @@ class RewarderTool{
 
   //加载广告
   loadRewardedVideo() async {
-    await ATRewardedManager.loadRewardedVideo(
+     ATRewardedManager.loadRewardedVideo(
         placementID: Configuration.rewarderPlacementID,
         extraMap: {
           //如果需要通过开发者的服务器进行奖励的下发（部分广告平台支持此服务器激励），则需要传递下面两个key
@@ -221,7 +221,7 @@ class RewarderTool{
 
   //展示广告
   showRewardedVideoAd() async {
-    await ATRewardedManager
+     ATRewardedManager
         .showRewardedVideo(
       placementID: Configuration.rewarderPlacementID,
     );
@@ -229,16 +229,16 @@ class RewarderTool{
 
   //展示广告，带场景ID
   showSceneRewardedAd() async {
-    await ATRewardedManager
+     ATRewardedManager
         .showSceneRewardedVideo(
       sceneID: Configuration.rewarderSceneID,
       placementID: Configuration.rewarderPlacementID,
     );
   }
 
-  //展示广告，带sceneID：TopOn/Taku 后台的场景ID，showCustomExt展示时的透传参数
+
   showRewardedVideoAdWithShowConfig() async {
-    await ATRewardedManager.showRewardedVideoWithShowConfig(
+     ATRewardedManager.showRewardedVideoWithShowConfig(
       placementID: Configuration.rewarderPlacementID,
       sceneID: Configuration.rewarderSceneID,
       showCustomExt: Configuration.rewardedShowCustomExt,
@@ -246,27 +246,27 @@ class RewarderTool{
   }
 
   entryRewardedVideoScenario(String placementID, String sceneID) async {
-    await ATRewardedManager.entryRewardedVideoScenario(
+     ATRewardedManager.entryRewardedVideoScenario(
         placementID: placementID,
         sceneID: sceneID
     );
   }
 
   autoLoadRewardedVideo() async {
-    await ATRewardedManager.autoLoadRewardedVideo(
+     ATRewardedManager.autoLoadRewardedVideo(
         placementIDs: Configuration.autoRewarderPlacementID
     );
   }
 
   cancelAutoLoadRewardedVideo() async {
-    await ATRewardedManager.cancelAutoLoadRewardedVideo(
+     ATRewardedManager.cancelAutoLoadRewardedVideo(
         placementIDs: Configuration.autoRewarderPlacementID
     );
   }
 
   //展示全自动加载的广告
   showAutoLoadRewardedVideoAD() async {
-    await ATRewardedManager.showAutoLoadRewardedVideoAD(
+     ATRewardedManager.showAutoLoadRewardedVideoAD(
         placementID: Configuration.autoRewarderPlacementID,
         sceneID: Configuration.autoRewarderSceneID
     );
@@ -275,7 +275,7 @@ class RewarderTool{
   // 设置全自动加载广告的展示透传信息，请用我们的key，value传自定义的字符串
   // Set local extra information for auto-loaded ad
   autoLoadRewardedVideoSetLocalExtra() async {
-    await ATRewardedManager.autoLoadRewardedVideoSetLocalExtra(
+     ATRewardedManager.autoLoadRewardedVideoSetLocalExtra(
         placementID: Configuration.autoRewarderPlacementID,
         extraMap: {
           ATRewardedManager.kATAdLoadingExtraUserDataKeywordKey(): '1234 auto show rv extra',

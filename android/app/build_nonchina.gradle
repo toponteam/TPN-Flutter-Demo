@@ -1,0 +1,29 @@
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    //Anythink(Core)
+    maven {
+        url "https://jfrog.anythinktech.com/artifactory/overseas_sdk"
+    }
+}
+
+dependencies {
+    //Anythink (Necessary)
+    api "com.anythink.sdk:core-tpn:6.5.52"
+    api "com.anythink.sdk:dm-imp-tpn:6.5.52"
+
+    //Androidx (Necessary)
+    api "androidx.appcompat:appcompat:1.6.1"
+    api "androidx.browser:browser:1.4.0"
+
+    //Anythink Adx SDK(Necessary)
+    api "com.anythink.sdk:adapter-tpn-sdm:6.5.56.1.0"
+    api "com.smartdigimkttech.sdk:smartdigimkttech-sdk:6.5.56"
+
+    //Tramini
+    api "com.anythink.sdk:tramini-plugin-tpn:6.5.52"
+
+
+
+}

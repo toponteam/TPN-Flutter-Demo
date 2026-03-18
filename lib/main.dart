@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:secmtp_sdk/at_platformview/at_native_platform_widget.dart';
-import 'package:topon.flutter.demo/Button/button_with_label.dart';
-import 'package:topon.flutter.demo/configuration_sdk.dart';
-import 'package:topon.flutter.demo/manager/banner_sdk.dart';
-import 'package:topon.flutter.demo/manager/listenerManager.dart';
-import 'package:topon.flutter.demo/manager/native_sdk.dart';
-import 'package:topon.flutter.demo/manager/splash_sdk.dart';
+import 'package:anythink_sdk_example/Button/button_with_label.dart';
+import 'package:anythink_sdk_example/configuration_sdk.dart';
+import 'package:anythink_sdk_example/manager/banner_sdk.dart';
+import 'package:anythink_sdk_example/manager/listenerManager.dart';
+import 'package:anythink_sdk_example/manager/native_sdk.dart';
+import 'package:anythink_sdk_example/manager/splash_sdk.dart';
 import 'package:event_bus/event_bus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -69,11 +69,7 @@ class _MyAppState extends State<MyApp> {
   _setSDK() {
     InitManager.setLogEnabled();
 
-    // InitManager.setExludeBundleIDArray();
-    // InitManager.deniedUploadDeviceInfo();
 
-    // 直接初始化SDK
-    //InitManager.initTopon();
 
     //展示GDPR+UMP弹窗，接收到关闭事件回调后在初始化SDK，应用在欧盟地区有发布需要使用
     InitManager.showGDPRConsentDialog();
@@ -109,23 +105,23 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'TopOn Flutter Demo',
+      title: 'TPN Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TopOnDemoPage(),
+      home: const TPNDemoPage(),
     );
   }
 }
 
-class TopOnDemoPage extends StatefulWidget {
-  const TopOnDemoPage({Key? key}) : super(key: key);
+class TPNDemoPage extends StatefulWidget {
+  const TPNDemoPage({Key? key}) : super(key: key);
 
   @override
-  State<TopOnDemoPage> createState() => TopOnDemoPageState();
+  State<TPNDemoPage> createState() => TPNDemoPageState();
 }
 
-class TopOnDemoPageState extends State<TopOnDemoPage> {
+class TPNDemoPageState extends State<TPNDemoPage> {
   // 添加状态变量存储 Native 广告视图
   PlatformNativeWidget? nativeAdWidget;
 
@@ -190,7 +186,7 @@ class TopOnDemoPageState extends State<TopOnDemoPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      'TopOn Flutter Demo',
+                      'TPN Flutter Demo',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24,

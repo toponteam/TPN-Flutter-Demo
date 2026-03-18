@@ -93,25 +93,3 @@ macos/Flutter/GeneratedPluginRegistrant.swift
 
 # Symbolication crash logs (iOS)
 ios/Flutter/*.symbols
-
-# Android
-/android/.gradle/
-/android/captures/
-/android/gradlew
-/android/gradlew.bat
-/android/gradle/
-/android/local.properties
-/android/app/debug/
-/android/app/profile/
-/android/app/release/
-/android/.cxx/
-.cxx/
-**/.cxx/
-
-# Flutter
-.fvm/
-.flutter-version
-
-# Test & Coverage
-.test_coverage.dart
-coverage/

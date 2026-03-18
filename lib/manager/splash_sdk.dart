@@ -126,7 +126,7 @@ class SplashTool {
 
   //加载广告
   loadSplashAd() async {
-    await ATSplashManager.loadSplash(
+     ATSplashManager.loadSplash(
         placementID: Configuration.splashPlacementID,
         extraMap: {ATSplashManager.tolerateTimeout(): 5000});
   }
@@ -167,31 +167,31 @@ class SplashTool {
 
   //展示广告
   showSplashAd() async {
-    await ATSplashManager.showSplash(
+     ATSplashManager.showSplash(
       placementID: Configuration.splashPlacementID,
     );
   }
 
-  //展示广告，带sceneID：TopOn/Taku 后台的场景ID
+  //展示广告，带sceneID：TPN 后台的场景ID
   showSceneSplashAd() async {
-    await ATSplashManager.showSceneSplash(
+     ATSplashManager.showSceneSplash(
       sceneID: Configuration.splashSceneID,
       placementID: Configuration.splashPlacementID,
     );
   }
 
-  //展示广告，带sceneID：TopOn/Taku 后台的场景ID，showCustomExt展示时的透传参数
+  //展示广告，带sceneID：TPN 后台的场景ID，showCustomExt展示时的透传参数
   showSplashAdWithShowConfig() async {
-    await ATSplashManager.showSplashAdWithShowConfig(
+     ATSplashManager.showSplashAdWithShowConfig(
       placementID: Configuration.splashPlacementID,
       sceneID: Configuration.splashSceneID,
       showCustomExt: Configuration.splashShowCustomExt,
     );
   }
 
-  //场景统计，带sceneID：TopOn/Taku 后台的场景ID
+  //场景统计，带sceneID：TPN 后台的场景ID
   entrySplashScenario() async {
-    await ATSplashManager.entrySplashScenario(
+     ATSplashManager.entrySplashScenario(
         placementID: Configuration.splashPlacementID,
         sceneID: Configuration.splashSceneID);
   }

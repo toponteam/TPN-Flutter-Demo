@@ -23,17 +23,17 @@ class Configuration {
   static String bannerShowCustomExt = 'BannerShowCustomExt';
   static String nativeShowCustomExt = 'NativeShowCustomExt';
 
-  static String rewarderSceneID = Platform.isIOS ? 'f5e54970dc84e6' : '';
-  static String autoRewarderSceneID = Platform.isIOS ? 'f5e54970dc84e6' : '';
+  static String rewarderSceneID = Platform.isIOS ? 'f5e54970dc84e6' : 'f5e5492eca9668';
+  static String autoRewarderSceneID = Platform.isIOS ? 'f5e54970dc84e6' : 'f5e5492eca9668';
 
-  static String interstitialSceneID = Platform.isIOS ? 'f5e549727efc49' : '';
-  static String autoInterstitialSceneID = Platform.isIOS ? 'f5e549727efc49' : '';
+  static String interstitialSceneID = Platform.isIOS ? 'f5e549727efc49' : 'f5e54937b0483d';
+  static String autoInterstitialSceneID = Platform.isIOS ? 'f5e549727efc49' : 'f5e54937b0483d';
 
-  static String nativeSceneID = Platform.isIOS ? 'f600938967feb5' : '';
+  static String nativeSceneID = Platform.isIOS ? 'f600938967feb5' : 'f600e5f8b80c14';
 
-  static String bannerSceneID = Platform.isIOS ? 'f600938d045dd3' : '';
+  static String bannerSceneID = Platform.isIOS ? 'f600938d045dd3' : 'f600e6039e152c';
 
-  static String splashSceneID = Platform.isIOS ? 'f5e549727efc49' : '';
+  static String splashSceneID = Platform.isIOS ? 'f5e549727efc49' : 'f628c7999265cd';
 
-  static String debugKey = Platform.isIOS ? '99117a5bf26ca7a1923b3fed8e5371d3ab68c25c' : '';
+  static String debugKey = Platform.isIOS ? '99117a5bf26ca7a1923b3fed8e5371d3ab68c25c' : 'aa3d1b3dffe65c68551105fd1abd666781bbc3e6';
 }

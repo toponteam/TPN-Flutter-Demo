@@ -165,7 +165,7 @@ class InterstitialTool {
 // 加载插屏广告
 // Load interstitial ad
   loadInterstitialAd() async {
-    await ATInterstitialManager.loadInterstitialAd(
+     ATInterstitialManager.loadInterstitialAd(
         placementID: Configuration.interstitialPlacementID,
         extraMap: {
           // Sigmob rewarded video ----> Interstitial ads
@@ -210,34 +210,34 @@ class InterstitialTool {
 // 展示插屏广告
 // Show interstitial ad
   showInterstitialAd() async {
-    await ATInterstitialManager.showInterstitialAd(
+     ATInterstitialManager.showInterstitialAd(
       placementID: Configuration.interstitialPlacementID,
     );
   }
 
-// 展示指定场景的插屏广告，带sceneID：TopOn/Taku 后台的场景ID
+// 展示指定场景的插屏广告，带sceneID：TPN 后台的场景ID
 // Show interstitial ad for a specific scene
   showSceneInterstitialAd() async {
-    await ATInterstitialManager.showSceneInterstitialAd(
+     ATInterstitialManager.showSceneInterstitialAd(
       placementID: Configuration.interstitialPlacementID,
       sceneID: Configuration.interstitialSceneID,
     );
   }
 
-// 使用展示配置展示插屏广告，带sceneID：TopOn/Taku 后台的场景ID，showCustomExt展示时的透传参数
+// 使用展示配置展示插屏广告，带sceneID：TPN 后台的场景ID，showCustomExt展示时的透传参数
 // Show interstitial ad with show configuration
   showInterstitialAdWithShowConfig() async {
-    await ATInterstitialManager.showInterstitialAdWithShowConfig(
+     ATInterstitialManager.showInterstitialAdWithShowConfig(
       placementID: Configuration.interstitialPlacementID,
       sceneID: Configuration.interstitialSceneID,
       showCustomExt: Configuration.interstitialShowCustomExt,
     );
   }
 
-// 进入插屏广告场景，带sceneID：TopOn/Taku 后台的场景ID
+// 进入插屏广告场景，带sceneID：TPN 后台的场景ID
 // Enter interstitial ad scenario
   entryInterstitialScenario(String placementID, String sceneID) async {
-    await ATInterstitialManager.entryInterstitialScenario(
+     ATInterstitialManager.entryInterstitialScenario(
         placementID: placementID,
         sceneID: sceneID);
   }
@@ -245,21 +245,21 @@ class InterstitialTool {
 // 开启全自动加载插屏广告
 // Auto-load interstitial ad
   autoLoadInterstitialAD() async {
-    await ATInterstitialManager.autoLoadInterstitialAD(
+     ATInterstitialManager.autoLoadInterstitialAD(
         placementIDs: Configuration.autoInterstitialPlacementID);
   }
 
 // 取消全自动加载插屏广告
 // Cancel auto-loading interstitial ad
   cancelAutoLoadInterstitialAD() async {
-    await ATInterstitialManager.cancelAutoLoadInterstitialAD(
+     ATInterstitialManager.cancelAutoLoadInterstitialAD(
         placementIDs: Configuration.autoInterstitialPlacementID);
   }
 
-// 使用placementID显示全自动加载的插屏广告，带sceneID：TopOn/Taku 后台的场景ID
+// 使用placementID显示全自动加载的插屏广告，带sceneID：TPN 后台的场景ID
 // Show auto-loaded interstitial ad using placementID
   showAutoLoadInterstitialADWithPlacementID() async {
-    await ATInterstitialManager.showAutoLoadInterstitialAD(
+     ATInterstitialManager.showAutoLoadInterstitialAD(
         placementID: Configuration.autoInterstitialPlacementID,
         sceneID: Configuration.autoInterstitialSceneID);
   }
@@ -267,7 +267,7 @@ class InterstitialTool {
 // 设置全自动加载插屏广告的展示透传信息，请用我们的key，value传自定义的字符串
 // Set local extra information for auto-loaded interstitial ad
   autoLoadInterstitialADSetLocalExtra() async {
-    await ATInterstitialManager.autoLoadInterstitialADSetLocalExtra(
+     ATInterstitialManager.autoLoadInterstitialADSetLocalExtra(
         placementID: Configuration.autoInterstitialPlacementID,
         extraMap: {
           ATInterstitialManager.kATAdShowCustomExtKey():

@@ -1,6 +1,6 @@
 import 'package:secmtp_sdk/at_index.dart';
-import 'package:topon.flutter.demo/main.dart';
-import 'package:topon.flutter.demo/manager/splash_sdk.dart';
+import 'package:anythink_sdk_example/main.dart';
+import 'package:anythink_sdk_example/manager/splash_sdk.dart';
 
 final ListenerManager = ListenerTool();
 

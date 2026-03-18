@@ -234,7 +234,7 @@ class NativeTool {
 
   //加载广告
   loadNativeAd() async {
-    await ATNativeManager.loadNativeAd(
+     ATNativeManager.loadNativeAd(
         placementID: Configuration.nativePlacementID,
         extraMap: {
           ATCommon.isNativeShow(): false,
@@ -279,7 +279,7 @@ class NativeTool {
 
   //展示原生广告
   showNative() async {
-    await ATNativeManager
+     ATNativeManager
         .showNativeAd(placementID: Configuration.nativePlacementID, extraMap: {
       ATNativeManager.parent(): ATNativeManager.createNativeSubViewAttribute(
         topSizeTool.getWidth(),
@@ -334,9 +334,9 @@ class NativeTool {
     });
   }
 
-  //展示原生广告，带sceneID：TopOn/Taku 后台的场景ID
+  //展示原生广告，带sceneID：TPN 后台的场景ID
   showSceneNativeAd() async {
-    await ATNativeManager.showSceneNativeAd(
+     ATNativeManager.showSceneNativeAd(
         placementID: Configuration.nativePlacementID,
         sceneID: Configuration.nativeSceneID,
         extraMap: {
@@ -396,9 +396,9 @@ class NativeTool {
         });
   }
 
-  //展示原生广告，带sceneID：TopOn/Taku 后台的场景ID，showCustomExt展示时的透传参数
+  //展示原生广告，带sceneID：TPN 后台的场景ID，showCustomExt展示时的透传参数
   showSceneNativeAdWithCustomExt() async {
-    await ATNativeManager.showSceneNativeAdWithCustomExt(
+     ATNativeManager.showSceneNativeAdWithCustomExt(
         placementID: Configuration.nativePlacementID,
         sceneID: Configuration.nativeSceneID,
         showCustomExt: Configuration.nativeShowCustomExt,
@@ -461,13 +461,13 @@ class NativeTool {
 
   //销毁广告
   removeNativeAd() async {
-    await ATNativeManager.removeNativeAd(
+     ATNativeManager.removeNativeAd(
         placementID: Configuration.nativePlacementID);
   }
 
   //场景统计
   entryNativeScenario() async {
-    await ATNativeManager.entryNativeScenario(
+     ATNativeManager.entryNativeScenario(
         placementID: Configuration.nativePlacementID,
         sceneID: Configuration.nativeSceneID);
   }

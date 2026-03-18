@@ -1,5 +1,5 @@
-import 'package:topon.flutter.demo/main.dart';
-import 'package:topon.flutter.demo/manager/automatic_sdk.dart';
+import 'package:anythink_sdk_example/main.dart';
+import 'package:anythink_sdk_example/manager/automatic_sdk.dart';
 
 final anyThinkRouters = {
   "/": (context) => MyHome(),

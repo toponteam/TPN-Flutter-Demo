@@ -126,7 +126,7 @@ class BannerTool {
 
   //加载banner ad
   loadBannerAd() async {
-    await ATBannerManager.loadBannerAd(
+     ATBannerManager.loadBannerAd(
         placementID: Configuration.bannerPlacementID,
         extraMap: {
           ATCommon.isNativeShow(): true,//是否加载Flutter原生的banner
@@ -170,7 +170,7 @@ class BannerTool {
 
   //根据一片区域展示banner ad,getAdSizeKey请跟load广告时传入的size的宽和高一致，按需求设置x、y轴坐标。
   showBannerAdInRectangle() async {
-    await ATBannerManager.showBannerInRectangle(
+     ATBannerManager.showBannerInRectangle(
         placementID: Configuration.bannerPlacementID,
         extraMap: {
           ATCommon.getAdSizeKey():
@@ -178,9 +178,9 @@ class BannerTool {
         });
   }
 
-  //根据一片区域展示banner ad，带sceneID：TopOn/Taku 后台的场景ID
+  //根据一片区域展示banner ad，带sceneID：TPN 后台的场景ID
   showSceneBannerAdInRectangle() async {
-    await ATBannerManager.showSceneBannerInRectangle(
+     ATBannerManager.showSceneBannerInRectangle(
         placementID: Configuration.bannerPlacementID,
         sceneID: Configuration.bannerSceneID,
         extraMap: {
@@ -192,14 +192,14 @@ class BannerTool {
 
   //根据位置展示banner ad
   showAdInPosition() async {
-    await ATBannerManager.showAdInPosition(
+     ATBannerManager.showAdInPosition(
         placementID: Configuration.bannerPlacementID,
         position: ATCommon.getAdATBannerAdShowingPositionBottom());
   }
 
-  //根据位置展示banner ad，带sceneID：TopOn/Taku 后台的场景ID
+  //根据位置展示banner ad，带sceneID：TPN 后台的场景ID
   showSceneBannerAdInPosition() async {
-    await ATBannerManager.showSceneBannerAdInPosition(
+     ATBannerManager.showSceneBannerAdInPosition(
         placementID: Configuration.bannerPlacementID,
         sceneID: Configuration.bannerSceneID,
         position: ATCommon.getAdATBannerAdShowingPositionBottom(),
@@ -208,28 +208,28 @@ class BannerTool {
   }
 
   removeBannerAd() async {
-    await ATBannerManager.removeBannerAd(
+     ATBannerManager.removeBannerAd(
       placementID: Configuration.bannerPlacementID,
     );
   }
 
   //隐藏banner AD
   hideBannerAd() async {
-    await ATBannerManager.hideBannerAd(
+     ATBannerManager.hideBannerAd(
       placementID: Configuration.bannerPlacementID,
     );
   }
 
   //在展示banner AD
   afreshShowBannerAd() async {
-    await ATBannerManager.afreshShowBannerAd(
+     ATBannerManager.afreshShowBannerAd(
       placementID: Configuration.bannerPlacementID,
     );
   }
 
-  //场景统计，sceneID：TopOn/Taku 后台的场景ID
+  //场景统计，sceneID：TPN 后台的场景ID
   entryBannerScenario() async {
-    await ATBannerManager.entryBannerScenario(
+     ATBannerManager.entryBannerScenario(
         placementID: Configuration.bannerPlacementID,
         sceneID: Configuration.bannerSceneID);
   }
