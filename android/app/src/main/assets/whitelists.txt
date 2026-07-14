@@ -1,0 +1,17 @@
+R.string.anythink_*
+R.drawable.anythink_*
+R.layout.anythink_*
+R.id.anythink_*
+R.dimen.anythink_*
+R.style.anythink_*
+R.color.anythink_*
+ 
+R.string.sdm_*
+R.drawable.sdm_*
+R.layout.sdm_*
+R.id.sdm_*
+R.dimen.sdm_*
+R.style.sdm_*
+R.color.sdm_*
+R.anim.sdm_*
+ 

@@ -1,4 +1,4 @@
-# TPN-Flutter-Demo
+# Taku-Flutter-Demo
 
 Demonstrates how to use the anythink_sdk plugin.
 

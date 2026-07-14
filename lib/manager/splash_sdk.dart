@@ -1,6 +1,7 @@
 import 'dart:developer';
+import 'dart:io';
 
-import 'package:secmtp_sdk/at_index.dart';
+import 'package:anythink_sdk/at_index.dart';
 import '../configuration_sdk.dart';
 import '../main.dart';
 
@@ -126,9 +127,14 @@ class SplashTool {
 
   //加载广告
   loadSplashAd() async {
+    final String template =
+    Platform.isIOS ? "TestCustomBottomView" : "splash_bottom_template";
      ATSplashManager.loadSplash(
         placementID: Configuration.splashPlacementID,
-        extraMap: {ATSplashManager.tolerateTimeout(): 5000});
+        extraMap: {ATSplashManager.tolerateTimeout(): 5000,
+        ATSplashManager.bottomTemplate(): template,
+        ATSplashManager.bottomRatio(): 0.18,
+        });
   }
 
   //检查是否准备就绪
@@ -172,7 +178,7 @@ class SplashTool {
     );
   }
 
-  //展示广告，带sceneID：TPN 后台的场景ID
+  //展示广告，带sceneID：Taku 后台的场景ID
   showSceneSplashAd() async {
      ATSplashManager.showSceneSplash(
       sceneID: Configuration.splashSceneID,
@@ -180,7 +186,7 @@ class SplashTool {
     );
   }
 
-  //展示广告，带sceneID：TPN 后台的场景ID，showCustomExt展示时的透传参数
+  //展示广告，带sceneID：Taku 后台的场景ID，showCustomExt展示时的透传参数
   showSplashAdWithShowConfig() async {
      ATSplashManager.showSplashAdWithShowConfig(
       placementID: Configuration.splashPlacementID,
@@ -189,7 +195,7 @@ class SplashTool {
     );
   }
 
-  //场景统计，带sceneID：TPN 后台的场景ID
+  //场景统计，带sceneID：Taku 后台的场景ID
   entrySplashScenario() async {
      ATSplashManager.entrySplashScenario(
         placementID: Configuration.splashPlacementID,

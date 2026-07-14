@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:secmtp_sdk/at_index.dart';
+import 'package:anythink_sdk/at_index.dart';
 import '../main.dart';
 import '../topsize.dart';
 import '../configuration_sdk.dart';
@@ -178,7 +178,7 @@ class BannerTool {
         });
   }
 
-  //根据一片区域展示banner ad，带sceneID：TPN 后台的场景ID
+  //根据一片区域展示banner ad，带sceneID：Taku 后台的场景ID
   showSceneBannerAdInRectangle() async {
      ATBannerManager.showSceneBannerInRectangle(
         placementID: Configuration.bannerPlacementID,
@@ -197,7 +197,7 @@ class BannerTool {
         position: ATCommon.getAdATBannerAdShowingPositionBottom());
   }
 
-  //根据位置展示banner ad，带sceneID：TPN 后台的场景ID
+  //根据位置展示banner ad，带sceneID：Taku 后台的场景ID
   showSceneBannerAdInPosition() async {
      ATBannerManager.showSceneBannerAdInPosition(
         placementID: Configuration.bannerPlacementID,
@@ -227,7 +227,7 @@ class BannerTool {
     );
   }
 
-  //场景统计，sceneID：TPN 后台的场景ID
+  //场景统计，sceneID：Taku 后台的场景ID
   entryBannerScenario() async {
      ATBannerManager.entryBannerScenario(
         placementID: Configuration.bannerPlacementID,

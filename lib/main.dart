@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:secmtp_sdk/at_platformview/at_native_platform_widget.dart';
+import 'package:anythink_sdk/at_platformview/at_native_platform_widget.dart';
 import 'package:anythink_sdk_example/Button/button_with_label.dart';
 import 'package:anythink_sdk_example/configuration_sdk.dart';
 import 'package:anythink_sdk_example/manager/banner_sdk.dart';
@@ -105,23 +105,23 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'TPN Flutter Demo',
+      title: 'TaKu Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TPNDemoPage(),
+      home: const TakuDemoPage(),
     );
   }
 }
 
-class TPNDemoPage extends StatefulWidget {
-  const TPNDemoPage({Key? key}) : super(key: key);
+class TakuDemoPage extends StatefulWidget {
+  const TakuDemoPage({Key? key}) : super(key: key);
 
   @override
-  State<TPNDemoPage> createState() => TPNDemoPageState();
+  State<TakuDemoPage> createState() => TakuDemoPageState();
 }
 
-class TPNDemoPageState extends State<TPNDemoPage> {
+class TakuDemoPageState extends State<TakuDemoPage> {
   // 添加状态变量存储 Native 广告视图
   PlatformNativeWidget? nativeAdWidget;
 
@@ -186,7 +186,7 @@ class TPNDemoPageState extends State<TPNDemoPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      'TPN Flutter Demo',
+                      'TaKu Flutter Demo',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24,

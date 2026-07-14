@@ -26,6 +26,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 
 android {
+    namespace "com.example.anythink_sdk_example"
     compileSdkVersion 34
 
     defaultConfig {
@@ -37,10 +38,6 @@ android {
         versionName flutterVersionName
 
         multiDexEnabled true
-    }
-
-    dexOptions {
-        javaMaxHeapSize "4g"
     }
 
 

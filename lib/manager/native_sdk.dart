@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:secmtp_sdk/at_index.dart';
+import 'package:anythink_sdk/at_index.dart';
 import 'package:event_bus/event_bus.dart';
 import '../main.dart';
 import '../topsize.dart';
@@ -334,7 +334,7 @@ class NativeTool {
     });
   }
 
-  //展示原生广告，带sceneID：TPN 后台的场景ID
+  //展示原生广告，带sceneID：Taku 后台的场景ID
   showSceneNativeAd() async {
      ATNativeManager.showSceneNativeAd(
         placementID: Configuration.nativePlacementID,
@@ -396,7 +396,7 @@ class NativeTool {
         });
   }
 
-  //展示原生广告，带sceneID：TPN 后台的场景ID，showCustomExt展示时的透传参数
+  //展示原生广告，带sceneID：Taku 后台的场景ID，showCustomExt展示时的透传参数
   showSceneNativeAdWithCustomExt() async {
      ATNativeManager.showSceneNativeAdWithCustomExt(
         placementID: Configuration.nativePlacementID,
