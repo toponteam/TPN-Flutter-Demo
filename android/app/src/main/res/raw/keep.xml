@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@string/anythink_*,@drawable/anythink_*,@layout/anythink_*,@id/anythink_*,@dimen/anythink_*,@style/anythink_*,@color/anythink_*,@string/sdm_*,@drawable/sdm_*,@layout/sdm_*,@id/sdm_*,@dimen/sdm_*,@style/sdm_*,@color/sdm_*,@anim/sdm_*"
-    tools:shrinkMode="safe" />

@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:anythink_sdk/at_index.dart';
+import 'package:secmtp_sdk/at_index.dart';
 import 'package:anythink_sdk_example/manager/splash_sdk.dart';
 import '../configuration_sdk.dart';
 import 'banner_sdk.dart';
@@ -102,7 +102,7 @@ class InitTool {
   }
 
   // 初始化SDK
-  Future<void> initTaku() async {
+  Future<void> initTPN() async {
     await ATInitManger.initAnyThinkSDK(
       appidStr: Configuration.appidStr,
       appidkeyStr: Configuration.appidkeyStr,
@@ -147,7 +147,7 @@ class InitTool {
       //GDPR+UMP弹窗流程关闭
       if (value.consentDismiss != null) {
         //初始化SDK
-        await initTaku();
+        await initTPN();
         //设置预置策略(可选)
         setPresetPlacementConfigPath();
         //开始预加载广告((可选)仅demo场景示例)

@@ -36,7 +36,7 @@
 		<true/>
 	</dict>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>"需要获取个人信息"</string>
+	<string>&quot;需要获取个人信息&quot;</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

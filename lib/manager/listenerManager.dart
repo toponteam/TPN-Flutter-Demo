@@ -1,4 +1,4 @@
-import 'package:anythink_sdk/at_index.dart';
+import 'package:secmtp_sdk/at_index.dart';
 import 'package:anythink_sdk_example/main.dart';
 import 'package:anythink_sdk_example/manager/splash_sdk.dart';
 

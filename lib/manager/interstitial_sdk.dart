@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:anythink_sdk/at_index.dart';
+import 'package:secmtp_sdk/at_index.dart';
 import '../configuration_sdk.dart';
 import '../main.dart';
 
@@ -215,7 +215,7 @@ class InterstitialTool {
     );
   }
 
-// 展示指定场景的插屏广告，带sceneID：Taku 后台的场景ID
+// 展示指定场景的插屏广告，带sceneID：TPN 后台的场景ID
 // Show interstitial ad for a specific scene
   showSceneInterstitialAd() async {
      ATInterstitialManager.showSceneInterstitialAd(
@@ -224,7 +224,7 @@ class InterstitialTool {
     );
   }
 
-// 使用展示配置展示插屏广告，带sceneID：Taku 后台的场景ID，showCustomExt展示时的透传参数
+// 使用展示配置展示插屏广告，带sceneID：TPN 后台的场景ID，showCustomExt展示时的透传参数
 // Show interstitial ad with show configuration
   showInterstitialAdWithShowConfig() async {
      ATInterstitialManager.showInterstitialAdWithShowConfig(
@@ -234,7 +234,7 @@ class InterstitialTool {
     );
   }
 
-// 进入插屏广告场景，带sceneID：Taku 后台的场景ID
+// 进入插屏广告场景，带sceneID：TPN 后台的场景ID
 // Enter interstitial ad scenario
   entryInterstitialScenario(String placementID, String sceneID) async {
      ATInterstitialManager.entryInterstitialScenario(
@@ -256,7 +256,7 @@ class InterstitialTool {
         placementIDs: Configuration.autoInterstitialPlacementID);
   }
 
-// 使用placementID显示全自动加载的插屏广告，带sceneID：Taku 后台的场景ID
+// 使用placementID显示全自动加载的插屏广告，带sceneID：TPN 后台的场景ID
 // Show auto-loaded interstitial ad using placementID
   showAutoLoadInterstitialADWithPlacementID() async {
      ATInterstitialManager.showAutoLoadInterstitialAD(
