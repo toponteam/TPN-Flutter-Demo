@@ -1,0 +1,91 @@
+PODS:
+  - Flutter (1.0.0)
+  - GDTMobSDK (4.15.90)
+  - GoogleUserMessagingPlatform (3.1.0)
+  - MintegralAdSDK/All (8.0.8):
+    - MintegralAdSDK/BannerAd
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+    - MintegralAdSDK/NativeAdvancedAd
+    - MintegralAdSDK/NewInterstitialAd
+    - MintegralAdSDK/RewardVideoAd
+    - MintegralAdSDK/SplashAd
+  - MintegralAdSDK/BannerAd (8.0.8):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidNativeAd (8.0.8):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/InterstitialVideoAd (8.0.8):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NativeAd (8.0.8)
+  - MintegralAdSDK/NativeAdvancedAd (8.0.8):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NewInterstitialAd (8.0.8):
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/RewardVideoAd (8.0.8):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/SplashAd (8.0.8):
+    - MintegralAdSDK/NativeAd
+  - secmtp_sdk (1.0.14):
+    - Flutter
+    - GoogleUserMessagingPlatform
+    - TPNDebugUISDK (= 1.0.7)
+    - TPNiOS (= 6.5.72)
+    - TPNMediationAdxSmartdigimktAdapter (= 6.5.75.2.0)
+    - TPNMediationGDTAdapter (= 4.15.90.0)
+    - TPNMediationMintegralAdapter (= 8.0.8.0)
+  - SmartdigimktSDK (6.5.75)
+  - TPNDebugUISDK (1.0.7):
+    - TPNiOS (>= 6.5.40)
+  - TPNiOS (6.5.72):
+    - TPNiOS/TPNSDK (= 6.5.72)
+  - TPNiOS/TPNSDK (6.5.72)
+  - TPNMediationAdxSmartdigimktAdapter (6.5.75.2.0):
+    - SmartdigimktSDK (= 6.5.75)
+    - TPNiOS (>= 6.5.60)
+  - TPNMediationGDTAdapter (4.15.90.0):
+    - GDTMobSDK (= 4.15.90)
+    - TPNiOS (>= 6.4.94)
+  - TPNMediationMintegralAdapter (8.0.8.0):
+    - MintegralAdSDK/All (= 8.0.8)
+    - TPNiOS (>= 6.4.94)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - secmtp_sdk (from `.symlinks/plugins/secmtp_sdk/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GDTMobSDK
+    - GoogleUserMessagingPlatform
+    - MintegralAdSDK
+    - SmartdigimktSDK
+    - TPNDebugUISDK
+    - TPNiOS
+    - TPNMediationAdxSmartdigimktAdapter
+    - TPNMediationGDTAdapter
+    - TPNMediationMintegralAdapter
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  secmtp_sdk:
+    :path: ".symlinks/plugins/secmtp_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  GDTMobSDK: fdec348687362cf20effb182286a5d1fbd3e8467
+  GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
+  MintegralAdSDK: f02fdbab6494030b4fe4b01d8bbf654263834a20
+  secmtp_sdk: f1d84580463dcbdaf34ae019dd85fb8d00dea876
+  SmartdigimktSDK: 6702ca42aad588b709b95bc32ddd80745fb68e8c
+  TPNDebugUISDK: 3f1bc169752d209c535999f0b19e6bb016ec0838
+  TPNiOS: c19c59e1244a9df16e35f118f48d46365e10628a
+  TPNMediationAdxSmartdigimktAdapter: 71ff6613dd23295b2e82dc405bb6b651d36a4be1
+  TPNMediationGDTAdapter: 7fc5c9635b52b819dd3fefb72062c4f2716e23ce
+  TPNMediationMintegralAdapter: 24bda58a4a34d7c0c586cc57e4f05efd6200a57d
+
+PODFILE CHECKSUM: 9254729d98df9697a6e0dc0694775cea407028ef
+
+COCOAPODS: 1.17.0

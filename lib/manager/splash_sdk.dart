@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:secmtp_sdk/at_index.dart';
 import '../configuration_sdk.dart';
@@ -7,6 +8,7 @@ import '../main.dart';
 final SplashManager = SplashTool();
 
 class SplashTool {
+  bool _isLoading = false;
 
   SplashTool() {
     //设置监听
@@ -15,10 +17,18 @@ class SplashTool {
 
   //加载广告
   startLoadSplashAd() async {
-    loadSplashAd();
+    print('flutter startLoadSplashAd: ENTER, _isLoading=$_isLoading');
+    if (_isLoading) {
+      print('flutter splash--已经在加载中，跳过重复请求');
+      return;
+    }
+    _isLoading = true;
     EventBusUtil.eventBus.fire(AdEvent(
         placementId: Configuration.splashPlacementID,
         type: AdEventType.loading));
+    print('flutter startLoadSplashAd: calling loadSplashAd...');
+    await loadSplashAd();
+    print('flutter startLoadSplashAd: loadSplashAd returned');
   }
 
   //展示广告
@@ -44,6 +54,8 @@ class SplashTool {
         if (isLoading == 1) {
           print('广告正在加载中... + ${Configuration.splashPlacementID}');
         } else {
+          // 检查加载状态显示未在加载中，重置标记并重新发起加载
+          _isLoading = false;
           print('广告还没加载，发起加载 + ${Configuration.splashPlacementID}');
           startLoadSplashAd();
         }
@@ -55,12 +67,14 @@ class SplashTool {
     ATListenerManager.splashEventHandler.listen((value) {
       switch (value.splashStatus) {
         case SplashStatus.splashDidFailToLoad:
+          _isLoading = false;
           log(
               "flutter splash--splashDidFailToLoad ---- placementID: ${value.placementID} ---- errStr:${value.requestMessage}");
           EventBusUtil.eventBus.fire(AdEvent(
               placementId: value.placementID, type: AdEventType.failed));
           break;
         case SplashStatus.splashDidFinishLoading:
+          _isLoading = false;
           log(
               "flutter splash--splashDidFinishLoading ---- placementID: ${value.placementID} ---- isTimeout：${value.isTimeout}");
           //到达展示场景，展示前检查是否准备就绪
@@ -75,6 +89,7 @@ class SplashTool {
           });
           break;
         case SplashStatus.splashDidTimeout:
+          _isLoading = false;
           log(
               "flutter splash--splashDidTimeout ---- placementID: ${value.placementID}");
           break;
@@ -126,9 +141,20 @@ class SplashTool {
 
   //加载广告
   loadSplashAd() async {
-     ATSplashManager.loadSplash(
+    print('flutter loadSplashAd: START for ${Configuration.splashPlacementID}');
+    final String template =
+Platform.isIOS ? "TestCustomBottomView" : "splash_bottom_template";
+    print('flutter loadSplashAd: template=$template, calling ATSplashManager.loadSplash...');
+    try {
+      final result = await ATSplashManager.loadSplash(
         placementID: Configuration.splashPlacementID,
-        extraMap: {ATSplashManager.tolerateTimeout(): 5000});
+        extraMap: {ATSplashManager.tolerateTimeout(): 5000,
+        ATSplashManager.bottomTemplate(): template,
+ATSplashManager.bottomRatio(): 0.18,});
+      print('flutter loadSplashAd: DONE, result=$result');
+    } catch (e) {
+      print('flutter loadSplashAd: ERROR $e');
+    }
   }
 
   //检查是否准备就绪

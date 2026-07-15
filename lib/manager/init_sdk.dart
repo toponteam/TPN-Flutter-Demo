@@ -103,7 +103,7 @@ class InitTool {
 
   // 初始化SDK
   Future<void> initTPN() async {
-    await ATInitManger.initAnyThinkSDK(
+    await ATInitManger.initSDK(
       appidStr: Configuration.appidStr,
       appidkeyStr: Configuration.appidkeyStr,
     );

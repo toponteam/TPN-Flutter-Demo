@@ -1,6 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.anythink_sdk_example">
+    xmlns:tools="http://schemas.android.com/tools">
 
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,7 +17,7 @@
         android:label="anythink_sdk_example"
         android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup='false'
-        tools:replace="android:label">
+        tools:replace="android:label,android:allowBackup">
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
